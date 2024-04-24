@@ -8,15 +8,15 @@ from project_0 import even_or_odd, multiplication_or_sum, add_and_iterate, rever
 
 
 class TestMultiplicationOrSum(unittest.TestCase):
-    @unittest.skip("")
+    #@unittest.skip("")
     def test_less_thousand(self):
         self.assertEqual(multiplication_or_sum(20, 50), 70)
 
-    @unittest.skip("")
+    #@unittest.skip("")
     def test_more_thousand(self):
         self.assertEqual(multiplication_or_sum(10, 50), 500)
 
-@unittest.skip("")
+# @unittest.skip("")
 class TestEvenOrOdd(unittest.TestCase):
     def test_even(self):
         self.assertEqual(even_or_odd(2), 1)
@@ -30,26 +30,26 @@ class TestEvenOrOdd(unittest.TestCase):
 
 
 class TestArr(unittest.TestCase):
-    @unittest.skip("")
+    # @unittest.skip("")
     def test_add_and_iterate(self):
         self.assertEqual(add_and_iterate([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), 55)
 
-    @unittest.skip("")
+    # @unittest.skip("")
     def test_check_n_same(self):
         self.assertEqual(check_n_same([1, 2, 3, 4, 5, 6, 7, 8], [1, 1, 1, 1, 1, 2, 3], 3), True)
         self.assertEqual(check_n_same([1, 2, 3, 4, 5, 6, 7, 8], [1, 1, 1, 1, 3, 2, 3], 3), False)
     
-    @unittest.skip("")
+    # @unittest.skip("")
     def test_save_divisible(self):
         self.assertEqual(save_divisible([10, 12, 13, 30, 50], 5), [10, 30, 50])
 
 
 class TestStr(unittest.TestCase):
-    @unittest.skip("")
+    # @unittest.skip("")
     def test_reverse_str(self):
         self.assertEqual(reverse_str("hello"), "olleh")
 
-    @unittest.skip("")
+    # @unittest.skip("")
     def test_remove_first_n_chars(self):
         self.assertEqual(remove_first_n_chars("hello", 3), "lo")
         self.assertEqual(remove_first_n_chars("hello", 6), "")
